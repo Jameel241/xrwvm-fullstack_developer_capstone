@@ -1,4 +1,4 @@
-yaml
+
 name: Django Capstone CI
 
 on:
@@ -40,4 +40,4 @@ jobs:
         run: |
           npm install
           npm run build
-```
+
