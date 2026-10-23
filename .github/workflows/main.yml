@@ -30,10 +30,13 @@ jobs:
         run: python manage.py check
 
       - name: Validate Python syntax
+        run: python -m compileall -q server/djangoproj server/djangoapp
+
+      - name: Build React frontend
+        working-directory: server/frontend
         run: |
-          python -m compileall -q server/djangoproj server/djangoapp
+          npm install
+          npm run build
 
       - name: Verify React build files
-        run: |
-          test -f server/frontend/build/index.html
-          echo "React production build exists"
+        run: test -f server/frontend/build/index.html
