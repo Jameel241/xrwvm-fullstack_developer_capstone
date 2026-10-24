@@ -1,68 +1,79 @@
-<html>
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Dealerships</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Dealerships</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link active" href="/About.html">About Us</a>
+                <a class="nav-link" href="/Contact.html">Contact Us</a>
+            </div>
         </div>
-      </div>
+    </nav>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+    <main class="container my-5">
+        <h1>About Us</h1>
+        <p>
+            Our car dealership platform helps customers discover dealerships,
+            explore available vehicles, read customer reviews, and share their
+            own experiences. We aim to make finding reliable dealerships easier
+            by providing useful dealership information and customer feedback.
+        </p>
+
+        <h2>Our Team</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500"
+                         class="card-img-top" alt="Project team member">
+                    <div class="card-body">
+                        <h3 class="card-title">Jameel</h3>
+                        <h5>Full-Stack Developer</h5>
+                        <p>Develops and integrates the dealership application
+                           and its backend services.</p>
+                        <p>Email: jameel241@example.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500"
+                         class="card-img-top" alt="Project team member">
+                    <div class="card-body">
+                        <h3 class="card-title">Afrasal</h3>
+                        <h5>Frontend Developer</h5>
+                        <p>Works on the user interface and improves the
+                           customer experience.</p>
+                        <p>Email: afrasal@example.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500"
+                         class="card-img-top" alt="Project team member">
+                    <div class="card-body">
+                        <h3 class="card-title">Yasir</h3>
+                        <h5>Backend Developer</h5>
+                        <p>Supports application logic, data handling, and
+                           integration with backend services.</p>
+                        <p>Email: yasir@example.com</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    
-</div>
-
+    </main>
+</body>
 </html>
+```
